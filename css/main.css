@@ -595,7 +595,7 @@ h3 {
 @media (max-width: 700px) {
   /* line 98, ../sass/main.scss */
   #wrap {
-    padding: 10px;
+    padding: 40px 10px;
   }
 }
 
