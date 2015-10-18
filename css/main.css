@@ -1,0 +1,688 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'base';
+  src: url("../fonts/base.eot?1o50p");
+  src: url("../fonts/base.eot?#iefix1o50p") format("embedded-opentype"), url("../fonts/base.woff?1o50p") format("woff"), url("../fonts/base.ttf?1o50p") format("truetype"), url("../fonts/base.svg?1o50p#base") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../sass/_icons.scss */
+[class^="icon-"],
+[class*=" icon-"],
+a.service-links-twitter,
+a.service-links-facebook,
+a.service-links-google-plus {
+  font-family: 'base';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 29, ../sass/_icons.scss */
+[class^="icon-"] img,
+[class*=" icon-"] img,
+a.service-links-twitter img,
+a.service-links-facebook img,
+a.service-links-google-plus img {
+  display: none;
+}
+
+/* line 34, ../sass/_icons.scss */
+.icon-cart:before {
+  content: "\e610";
+}
+
+/* line 37, ../sass/_icons.scss */
+.icon-bubble:before {
+  content: "\e611";
+}
+
+/* line 40, ../sass/_icons.scss */
+.icon-cog:before {
+  content: "\e612";
+}
+
+/* line 43, ../sass/_icons.scss */
+.icon-close:before {
+  content: "\e613";
+}
+
+/* line 46, ../sass/_icons.scss */
+.icon-checkmark:before {
+  content: "\e614";
+}
+
+/* line 49, ../sass/_icons.scss */
+.icon-minus:before {
+  content: "\e615";
+}
+
+/* line 52, ../sass/_icons.scss */
+.icon-plus:before {
+  content: "\e616";
+}
+
+/* line 55, ../sass/_icons.scss */
+.icon-feed:before {
+  content: "\e601";
+}
+
+/* line 58, ../sass/_icons.scss */
+.icon-youtube:before {
+  content: "\e602";
+}
+
+/* line 61, ../sass/_icons.scss */
+.icon-vimeo:before {
+  content: "\e603";
+}
+
+/* line 64, ../sass/_icons.scss */
+.icon-apple:before {
+  content: "\e604";
+}
+
+/* line 67, ../sass/_icons.scss */
+.icon-amazon:before {
+  content: "\e605";
+}
+
+/* line 70, ../sass/_icons.scss */
+.icon-mail:before {
+  content: "\e606";
+}
+
+/* line 73, ../sass/_icons.scss */
+.icon-heart:before {
+  content: "\e617";
+}
+
+/* line 76, ../sass/_icons.scss */
+.icon-heart2:before {
+  content: "\e618";
+}
+
+/* line 79, ../sass/_icons.scss */
+.icon-search:before {
+  content: "\e619";
+}
+
+/* line 82, ../sass/_icons.scss */
+.icon-list:before {
+  content: "\e60f";
+}
+
+/* line 85, ../sass/_icons.scss */
+.icon-play:before {
+  content: "\e61a";
+}
+
+/* line 88, ../sass/_icons.scss */
+.icon-pause:before {
+  content: "\e61b";
+}
+
+/* line 91, ../sass/_icons.scss */
+.icon-stop:before {
+  content: "\e61c";
+}
+
+/* line 94, ../sass/_icons.scss */
+.icon-next:before {
+  content: "\e61d";
+}
+
+/* line 97, ../sass/_icons.scss */
+.icon-previous:before {
+  content: "\e61e";
+}
+
+/* line 100, ../sass/_icons.scss */
+.icon-first:before {
+  content: "\e61f";
+}
+
+/* line 103, ../sass/_icons.scss */
+.icon-last:before {
+  content: "\e620";
+}
+
+/* line 106, ../sass/_icons.scss */
+.icon-resize-enlarge:before {
+  content: "\e621";
+}
+
+/* line 109, ../sass/_icons.scss */
+.icon-resize-shrink:before {
+  content: "\e622";
+}
+
+/* line 112, ../sass/_icons.scss */
+.icon-sound:before {
+  content: "\e623";
+}
+
+/* line 115, ../sass/_icons.scss */
+.icon-mute:before {
+  content: "\e624";
+}
+
+/* line 118, ../sass/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e625";
+}
+
+/* line 121, ../sass/_icons.scss */
+.icon-arrow-down:before {
+  content: "\e626";
+}
+
+/* line 124, ../sass/_icons.scss */
+.icon-arrow-up:before {
+  content: "\e627";
+}
+
+/* line 127, ../sass/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e628";
+}
+
+/* line 130, ../sass/_icons.scss */
+.icon-flickr:before {
+  content: "\e607";
+}
+
+/* line 133, ../sass/_icons.scss */
+.icon-twitter:before,
+a.service-links-twitter:before {
+  content: "\e608";
+}
+
+/* line 137, ../sass/_icons.scss */
+.icon-facebook:before,
+a.service-links-facebook:before {
+  content: "\e609";
+}
+
+/* line 141, ../sass/_icons.scss */
+.icon-googleplus:before,
+a.service-links-google-plus:before {
+  content: "\e60a";
+}
+
+/* line 145, ../sass/_icons.scss */
+.icon-pinterest:before {
+  content: "\e60b";
+}
+
+/* line 148, ../sass/_icons.scss */
+.icon-tumblr:before {
+  content: "\e60c";
+}
+
+/* line 151, ../sass/_icons.scss */
+.icon-linkedin:before {
+  content: "\e629";
+}
+
+/* line 154, ../sass/_icons.scss */
+.icon-spotify:before {
+  content: "\e600";
+}
+
+/* line 157, ../sass/_icons.scss */
+.icon-instagram:before {
+  content: "\e60d";
+}
+
+/* line 160, ../sass/_icons.scss */
+.icon-soundcloud:before {
+  content: "\e60e";
+}
+
+/* line 167, ../sass/_icons.scss */
+.block-btns a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 170, ../sass/_icons.scss */
+.block-btns a:hover {
+  color: #fff !important;
+}
+/* line 175, ../sass/_icons.scss */
+.block-btns .icon-vimeo:hover {
+  background-color: #aad450;
+}
+/* line 178, ../sass/_icons.scss */
+.block-btns .icon-twitter:hover {
+  background-color: #00aced;
+}
+/* line 181, ../sass/_icons.scss */
+.block-btns .icon-facebook:hover {
+  background-color: #3b5998;
+}
+/* line 184, ../sass/_icons.scss */
+.block-btns .icon-googleplus:hover {
+  background-color: #dd4b39;
+}
+/* line 187, ../sass/_icons.scss */
+.block-btns .icon-pinterest:hover {
+  background-color: #cb2027;
+}
+/* line 190, ../sass/_icons.scss */
+.block-btns .icon-instagram:hover {
+  background-color: #517fa4;
+}
+
+/* This stylesheet generated by Transfonter (http://transfonter.org) */
+@font-face {
+  font-family: 'BirminghamSquat';
+  src: url("../fonts/BirminghamSquat.eot");
+  src: url("../fonts/BirminghamSquat.eot?#iefix") format("embedded-opentype"), url("../fonts/BirminghamSquat.woff") format("woff"), url("../fonts/BirminghamSquat.ttf") format("truetype"), url("../fonts/BirminghamSquat.svg#BirminghamSquat") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BirminghamTitlingElongated';
+  src: url("../fonts/BirminghamTitlingElongated.eot");
+  src: url("../fonts/BirminghamTitlingElongated.eot?#iefix") format("embedded-opentype"), url("../fonts/BirminghamTitlingElongated.woff") format("woff"), url("../fonts/BirminghamTitlingElongated.ttf") format("truetype"), url("../fonts/BirminghamTitlingElongated.svg#BirminghamTitlingElongated") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Birmingham';
+  src: url("../fonts/Birmingham.eot");
+  src: url("../fonts/Birmingham.eot?#iefix") format("embedded-opentype"), url("../fonts/Birmingham.woff") format("woff"), url("../fonts/Birmingham.ttf") format("truetype"), url("../fonts/Birmingham.svg#Birmingham") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BirminghamElongated';
+  src: url("../fonts/BirminghamElongated.eot");
+  src: url("../fonts/BirminghamElongated.eot?#iefix") format("embedded-opentype"), url("../fonts/BirminghamElongated.woff") format("woff"), url("../fonts/BirminghamElongated.ttf") format("truetype"), url("../fonts/BirminghamElongated.svg#BirminghamElongated") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BirminghamTitling';
+  src: url("../fonts/BirminghamTitling.eot");
+  src: url("../fonts/BirminghamTitling.eot?#iefix") format("embedded-opentype"), url("../fonts/BirminghamTitling.woff") format("woff"), url("../fonts/BirminghamTitling.ttf") format("truetype"), url("../fonts/BirminghamTitling.svg#BirminghamTitling") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BirminghamBold';
+  src: url("../fonts/BirminghamBold.eot");
+  src: url("../fonts/BirminghamBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BirminghamBold.woff") format("woff"), url("../fonts/BirminghamBold.ttf") format("truetype"), url("../fonts/BirminghamBold.svg#BirminghamBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Edwardian Script ITC';
+  src: url("../fonts/EdwardianScriptITC.eot");
+  src: url("../fonts/EdwardianScriptITC.eot?#iefix") format("embedded-opentype"), url("../fonts/EdwardianScriptITC.woff") format("woff"), url("../fonts/EdwardianScriptITC.ttf") format("truetype"), url("../fonts/EdwardianScriptITC.svg#EdwardianScriptITC") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BirminghamTitlingBold';
+  src: url("../fonts/BirminghamTitlingBold.eot");
+  src: url("../fonts/BirminghamTitlingBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BirminghamTitlingBold.woff") format("woff"), url("../fonts/BirminghamTitlingBold.ttf") format("truetype"), url("../fonts/BirminghamTitlingBold.svg#BirminghamTitlingBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+/* VARS 
+-------------------------------------------------------------- */
+/*  COLORS  */
+/*  BORDERS  */
+/*  TYPOGROPHY */
+/*  TRANSITIONS */
+/* MIX-INS 
+-------------------------------------------------------------- */
+/* line 80, ../sass/_vars.scss */
+.link-invert {
+  color: #fff;
+}
+/* line 69, ../sass/_vars.scss */
+.link-invert:hover {
+  color: #9d3114;
+}
+
+/* line 84, ../sass/_vars.scss */
+.trans-all, a {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 91, ../sass/_vars.scss */
+.section-header-over {
+  margin-bottom: -7px;
+  position: relative;
+  z-index: 100;
+}
+
+/* BUTTONS
+-------------------------------------------------------------- */
+/* line 104, ../sass/_vars.scss */
+.btn, .btn-lt, .btn-dk {
+  font-family: "BirminghamTitlingElongated", serif;
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #D8D8D8;
+  color: #000;
+  padding: 5px 15px;
+  font-size: .8em;
+}
+
+/* line 126, ../sass/_vars.scss */
+.btn-sm {
+  padding: 2px 8px;
+  font-size: .6em;
+}
+
+/* line 131, ../sass/_vars.scss */
+.btn-med {
+  padding: 10px 15px;
+  font-size: .8em;
+}
+
+/* line 136, ../sass/_vars.scss */
+.btn-lg {
+  padding: 20px 30px;
+  font-size: 1em;
+}
+
+/* line 141, ../sass/_vars.scss */
+.btn-lt {
+  background-color: #D8D8D8;
+  color: #000;
+}
+/* line 120, ../sass/_vars.scss */
+.btn-lt:hover {
+  background-color: #f6f6f6;
+  color: #000;
+}
+
+/* line 146, ../sass/_vars.scss */
+.btn-dk {
+  background-color: #000;
+  color: #f6f6f6;
+}
+/* line 120, ../sass/_vars.scss */
+.btn-dk:hover {
+  background-color: #9d3114;
+  color: #000;
+}
+
+/* PLACEHOLDERS & EXTENDS
+-------------------------------------------------------------- */
+/* BASIC STYLES
+-------------------------------------------------------------- */
+/* line 11, ../sass/main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 16, ../sass/main.scss */
+* img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 23, ../sass/main.scss */
+body {
+  font: 16px/1.5 "BirminghamTitlingElongated", serif;
+  color: #000;
+  position: relative;
+  background: url("../images/HB-paper-texture.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+/* line 33, ../sass/main.scss */
+.feather {
+  opacity: .3;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  height: 500px;
+  margin-top: 50px;
+}
+/* line 41, ../sass/main.scss */
+.feather img {
+  height: 100%;
+  width: auto;
+}
+
+/* line 47, ../sass/main.scss */
+.trigger-feather {
+  position: absolute;
+  padding-top: 100vh;
+}
+
+/* line 52, ../sass/main.scss */
+a {
+  color: #9d3114;
+  text-decoration: none;
+}
+/* line 69, ../sass/_vars.scss */
+a:hover {
+  color: #000;
+}
+
+/* line 59, ../sass/main.scss */
+h1,
+h2 {
+  font-family: "BirminghamElongated", serif;
+}
+
+/* line 64, ../sass/main.scss */
+h1 {
+  font-size: 140px;
+  line-height: 140px;
+  letter-spacing: -10px;
+}
+
+/* line 70, ../sass/main.scss */
+h2 {
+  font-size: 80px;
+  line-height: 80px;
+}
+
+/* line 75, ../sass/main.scss */
+h3 {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+/* line 82, ../sass/main.scss */
+#wrap {
+  padding: 80px;
+  position: relative;
+}
+
+/* line 87, ../sass/main.scss */
+#header {
+  margin-bottom: 40px;
+}
+/* line 90, ../sass/main.scss */
+#header h2 {
+  font-family: "Edwardian Script ITC", serif;
+}
+/* line 93, ../sass/main.scss */
+#header h2 a {
+  font-size: 140px;
+  line-height: 100px;
+  display: block;
+}
+
+/* line 102, ../sass/main.scss */
+p {
+  font-size: 40px;
+  letter-spacing: -2px;
+  max-width: 1000px;
+  margin: auto;
+}
+/* line 108, ../sass/main.scss */
+p.small {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* line 114, ../sass/main.scss */
+.at, .ab {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* line 119, ../sass/main.scss */
+.at {
+  margin-bottom: 40px;
+}
+
+/* line 123, ../sass/main.scss */
+.ab {
+  margin-top: 40px;
+}
+
+/* line 127, ../sass/main.scss */
+.social-icons {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+/* line 132, ../sass/main.scss */
+.section {
+  margin-bottom: 80px;
+}
+
+/* BORDER
+-------------------------------------------------------------- */
+/* line 136, ../sass/main.scss */
+.tl, .tr, .bl, .br {
+  height: 8vw;
+  width: 8vw;
+  position: absolute;
+}
+/* line 141, ../sass/main.scss */
+.tl img, .tr img, .bl img, .br img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 147, ../sass/main.scss */
+.tl, .tr {
+  top: 0;
+}
+
+/* line 148, ../sass/main.scss */
+.bl, .br {
+  bottom: 0;
+}
+
+/* line 149, ../sass/main.scss */
+.tr, .br {
+  right: 0;
+}
+
+/* line 152, ../sass/main.scss */
+.t, .b, .l, .r {
+  position: absolute;
+}
+
+/* line 156, ../sass/main.scss */
+.t, .b {
+  height: 8vw;
+  width: 84vw;
+}
+
+/* line 161, ../sass/main.scss */
+.r, .l {
+  width: 10vw;
+  height: 60vh;
+}
+
+/* line 166, ../sass/main.scss */
+.t {
+  background: url(../images/HB-border-t.png);
+  left: 8vw;
+  background-size: auto 8vw;
+}
+
+/* line 172, ../sass/main.scss */
+.b {
+  background: url(../images/HB-border-b.png);
+  left: 8vw;
+  bottom: 0;
+  background-size: auto 8vw;
+}
